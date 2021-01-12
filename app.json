@@ -1,7 +1,11 @@
 {
   "expo": {
-    "name": "lotto-app",
-    "slug": "lotto-app",
+    "name": "로또맛집",
+    "slug": "LottoMatZip",
+    "platforms": [
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,17 +20,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.jaehoon.LottoMatZip",
+      "versionCode": 1,
+	"config" : {
+		"googleMobileAdsAppId" : "ca-app-pub-9106671749645972~2982927382"
+	}
     }
   }
 }
