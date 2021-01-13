@@ -6,7 +6,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -22,7 +22,7 @@
     ],
     "android": {
       "package": "com.jaehoon.LottoMatZip",
-      "versionCode": 1,
+      "versionCode": 2,
 	"config" : {
 		"googleMobileAdsAppId" : "ca-app-pub-9106671749645972~2982927382"
 	}

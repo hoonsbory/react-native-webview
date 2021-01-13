@@ -7,9 +7,9 @@ import { ToastAndroid, BackHandler, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 
-
 export default class App extends React.Component {
   constructor(props) {
+
     super(props);
   }
   adFunction = async () => {
@@ -27,7 +27,7 @@ export default class App extends React.Component {
 
 
   componentDidMount() {
-    this.adFunction();
+    // this.adFunction();
     BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
   }
 
@@ -66,6 +66,7 @@ export default class App extends React.Component {
 
 
   render() {
+
     //특정 기기에서 폰트가 확대되어 나오기때문에 따로 클래스로 묶어서 폰트 사이즈 다운.
     const cssInjection = `function addStyle(){ 
       const style = document.createElement('style') 
@@ -82,10 +83,10 @@ export default class App extends React.Component {
           servePersonalizedAds
           onDidFailToReceiveAdWithError={this.bannerError} />
         <WebView
-          source={{ uri: "https://lottozip.site" }}
-          ref={(webView) => { this.webView.ref = webView; }}
-          onNavigationStateChange={(navState) => { this.webView.canGoBack = navState.canGoBack; }}
-          injectedJavaScript={cssInjection}
+          source={{ uri: "https://lottozip.site" }} 
+          textZoom={100}
+          
+        // injectedJavaScript={cssInjection}
         />
       </View>
 
