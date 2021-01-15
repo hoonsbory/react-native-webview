@@ -22,7 +22,10 @@
     ],
     "android": {
       "package": "com.jaehoon.LottoMatZip",
-      "versionCode": 2,
+      "versionCode": 4,
+      "permissions" : [
+        "CAMERA"
+      ],
 	"config" : {
 		"googleMobileAdsAppId" : "ca-app-pub-9106671749645972~2982927382"
 	}
